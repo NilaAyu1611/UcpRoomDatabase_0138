@@ -147,7 +147,6 @@ fun BodyHomeDsnView (
                 listDsn = homeUiState.listDsn,
                 onClik = {
                     onclick(it)
-                    println(it)
                 },
                 modifier = modifier
             )

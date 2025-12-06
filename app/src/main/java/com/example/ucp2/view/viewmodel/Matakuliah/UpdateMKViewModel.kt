@@ -70,11 +70,6 @@ class UpdateMKViewModel (
                         matakuliahEvent = MatakuliahEvent(),
                         isEntryValid = FormErrorStateMK()
                     )
-                    println(
-                        "snackBarMessage diatur: ${
-                            updateMKUIState.snackBarMessage
-                        }"
-                    )
                 } catch (e: Exception) {
                     updateMKUIState = updateMKUIState.copy(
                         snackBarMessage = "Data gagal diupdate"

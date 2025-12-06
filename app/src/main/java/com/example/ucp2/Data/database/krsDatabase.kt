@@ -9,7 +9,7 @@ import com.example.ucp2.Data.dao.MataKuliahDao
 import com.example.ucp2.Data.entity.Dosen
 import com.example.ucp2.Data.entity.Matakuliah
 
-//Mendifinisikan databse dengan tabel dosen & matakuliah
+//Mendefinisikan database dengan tabel dosen & matakuliah
 @Database(entities = [Dosen::class, Matakuliah::class],       //Daftar tabel dalam DB
     version = 1,
     exportSchema = false)
@@ -20,7 +20,7 @@ abstract class krsDatabase():RoomDatabase(){
     abstract fun mataKuliahDao(): MataKuliahDao     // Dao untuk mengakses data di tabel matakuliah
 
     companion object{
-        @Volatile                   //memastikan bahwa nilai variabel instance selau sama di semua thread
+        @Volatile                   //memastikan bahwa nilai variabel instance selalu sama di semua thread
         private var Instance: krsDatabase? = null
 
         fun getDatabase(context: Context): krsDatabase{
