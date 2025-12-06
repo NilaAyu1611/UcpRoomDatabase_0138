@@ -70,9 +70,6 @@ fun PengelolaHalaman(
             HomeMKView(
                 onDetailClick = { kode ->
                     navController.navigate("${DestinasiDetailMK.route}/$kode")
-                    println(
-                        "PengelolaanHalaman: nim = $kode"
-                    )
                 },
                 onAddMk = {
                     navController.navigate(DestinasiInsertMK.route)

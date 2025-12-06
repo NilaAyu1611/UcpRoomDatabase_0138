@@ -26,9 +26,6 @@ interface MataKuliahDao {
 
     @Update
     suspend fun updateMatakuliah(matakuliah: Matakuliah)
-
-    @Query("SELECT nama FROM dosen")
-    suspend fun getAllDosenNames(): List<String>
 //
 //    @Query(
 //        """SELECT
