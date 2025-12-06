@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface MataKuliahDao {
-    @Query("select* from matakuliah")
+    @Query("select * from matakuliah")
     fun getAllMatakuliah(): Flow<List<Matakuliah>>
 
     @Insert
@@ -18,7 +18,7 @@ interface MataKuliahDao {
         matakuliah: Matakuliah
     )
 
-    @Query("select* from matakuliah where kode= :kode")
+    @Query("select * from matakuliah where kode = :kode")
     fun getMatakuliah(kode: String): Flow<Matakuliah>
 
     @Delete

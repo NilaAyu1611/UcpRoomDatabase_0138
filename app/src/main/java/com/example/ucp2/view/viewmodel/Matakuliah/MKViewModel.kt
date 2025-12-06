@@ -41,7 +41,7 @@ class MKViewModel (private val repositoryMK: RepositoryMK) : ViewModel(){
             sks = if (event.sks.isNotEmpty()) null else "SKS tidak boleh kosong",
             semester = if (event.semester.isNotEmpty()) null else "Semester tidak boleh kosong",
             jenismk = if (event.jenismk.isNotEmpty()) null else "Jenis Mata Kuliah tidak boleh kosong",
-            dosenpengampu = if (event.dosenpengampu.isNotEmpty()) null else " tidak boleh kosong"
+            dosenpengampu = if (event.dosenpengampu.isNotEmpty()) null else "Dosen Pengampu tidak boleh kosong"
         )
         uiState = uiState.copy(isEntryValid = errorState)
         return errorState.isValid()
@@ -73,7 +73,7 @@ class MKViewModel (private val repositoryMK: RepositoryMK) : ViewModel(){
 
         }
     }
-    fun resetSbackBarMessage(){
+    fun resetSnackBarMessage(){
         uiState = uiState.copy(snackBarMessage = null)
     }
 

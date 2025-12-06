@@ -9,7 +9,7 @@ import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface DosenDao {
-    @Query("select* from dosen")
+    @Query("select * from dosen")
     fun getAllDosen(): Flow<List<Dosen>>
 
     @Query("SELECT nama FROM dosen")
@@ -20,6 +20,6 @@ interface DosenDao {
         dosen: Dosen
     )
 
-    @Query("select * from dosen where nama= :nama")
-    fun getDosen(nama:String): Flow<Dosen>
+    @Query("select * from dosen where nama = :nama")
+    fun getDosen(nama: String): Flow<Dosen>
 }

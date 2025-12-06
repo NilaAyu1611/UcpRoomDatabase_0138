@@ -85,7 +85,7 @@ fun InsertMkView(
         uiState.snackBarMessage?.let { message ->
             coroutineScope.launch {
                 snackbarHostState.showSnackbar(message)
-                viewModel.resetSbackBarMessage()
+                viewModel.resetSnackBarMessage()
             }
         }
     }
