@@ -104,7 +104,7 @@ data class FormErrorStateMK(
 }
 
 
-//meyimpan input form kedlm entity
+//menyimpan input form ke dalam entity
 fun MatakuliahEvent.toMatakuliahEntity():Matakuliah = Matakuliah(
     kode = kode,
     nama = nama,

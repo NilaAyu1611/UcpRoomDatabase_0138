@@ -4,7 +4,7 @@ import com.example.ucp2.Data.dao.DosenDao
 import com.example.ucp2.Data.entity.Dosen
 import kotlinx.coroutines.flow.Flow
 
-//menghubungkan DosenDao dengan operasi yang didefinisikan dlaam RepositoryDsn
+//menghubungkan DosenDao dengan operasi yang didefinisikan dalam RepositoryDsn
 class LocalRepositoryDsn (
     private val dosenDao: DosenDao
 ): RepositoryDsn{

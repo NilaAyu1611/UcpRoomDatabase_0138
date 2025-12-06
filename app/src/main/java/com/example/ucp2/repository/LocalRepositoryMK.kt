@@ -15,7 +15,7 @@ class LocalRepositoryMK(
         mataKuliahDao.insertMatakuliah(matakuliah)
     }
 
-    override fun getAllMatakuliah(): Flow<List<Matakuliah>> {       // memanggil fungsi ini untuk mendapatkan semua data mk dlm bentuk flow
+    override fun getAllMatakuliah(): Flow<List<Matakuliah>> {       // memanggil fungsi ini untuk mendapatkan semua data mk dalam bentuk flow
         return mataKuliahDao.getAllMatakuliah()
     }
 
@@ -23,7 +23,7 @@ class LocalRepositoryMK(
         return mataKuliahDao.getMatakuliah(kode)
     }
 
-    override suspend fun deleteMatakuliah(matakuliah: Matakuliah) {     // mengahpus data mk
+    override suspend fun deleteMatakuliah(matakuliah: Matakuliah) {     // menghapus data mk
         mataKuliahDao.deleteMatakuliah(matakuliah)
     }
 
